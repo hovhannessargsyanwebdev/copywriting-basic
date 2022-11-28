@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+	<script src="js/jquery-1.11.0.min"></script>
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script> -->
+
+<!-- <script src="https://www.gstatic.com/firebasejs/5.8.4/firebase.js"></script>
+ -->
+<!--    // Initialize Firebase -->
+<!--  <script>
+  var config = {
+    apiKey: "AIzaSyBj5vN1ttdBPUjEqYxaFPlL6JCoBxOyrCA",
+    authDomain: "my-project-1520336583740.firebaseapp.com",
+    databaseURL: "https://my-project-1520336583740.firebaseio.com",
+    projectId: "my-project-1520336583740",
+    storageBucket: "my-project-1520336583740.appspot.com",
+    messagingSenderId: "456347300332"
+  };
+  firebase.initializeApp(config);
+</script> -->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width scale=1">
+	<title>Basend</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/media_style.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+</head>
+<body>
+   	<div class="to_top">
+   		<a href="#top">
+   			<i class="fas fa-angle-up"></i>
+   		 </a>
+     </div>
+
+	      <!-- HEADER -->   
+	<header>		
+	   	<nav>
+	 		<div class="container_navigation">  
+	 		<div class="nav__container_">
+			<a href="index.html" class="nav__link_h1"><h1>Basic</h1></a>
+			<select name="menu" class="select" onchange="top.location=this.value">
+			   	<option value="menu" selected="selected">MENU</option>
+			   	<option value="index.html">Home
+			   		<!-- <a href="index.html" target="_blank">Home</a> -->
+			   	</option>
+			   	<option value="">Pages</option>
+			   	<option value="gallery.html">- - Gallery
+			   		<!-- <a href="gallery.html">- - Gallery</a> -->
+			   	</option>
+			   	<option value="full-width.html">full-width
+			   		<!-- <a href="full-width.html">- - Full Width</a> -->
+			   	</option>
+			   	<option value="sidebar_left.html">- - Sidebar left
+			   		<!-- <a href="sidebar_left.html">- - Sidebar left</a> -->
+			   	</option>
+			   	<option value="sidebar_right.html">- - Sidebar Right
+			   		<!-- <a href="sidebar_right.html">- - Sidebar Right</a> -->
+			   	</option>
+			   	<option value="basic grid">- - Basic Grid</option>
+			   	<option value="Dropdown">Dropdown</option>
+			   	<option value="">- - Level 2</option>
+			   	<option value="">- - Level 2 + drop</option>
+			   	<option value="">- - Level 3</option>
+			   	<option value="">- - Level 3</option>
+			   	<option value="">- - Level 3</option>
+			   	<option value="">- - Level 2</option>
+			   	<option value="">Link Text</option>
+			   	<option value="">Link Text</option>
+		     </select>
+		    <ul class="nav__ul">
+		    	<!-- HOME -->
+				<li class="nav__ul__item_first nav__ul__item">
+					<a href="index.html">home</a>
+				</li>
+				<!-- PAGES -->
+				<li class="nav__ul__item">
+					<span class="nav__ul__item_before_1">
+						<a href="#">pages</a>
+					</span>
+				<!-- PAGES UL LI -->
+					<ul class="nav__ul__item__2">
+						<li><a href="gallery.html" target="_blank">gallery</a></li>
+						<li><a href="full-width.html" target="_blank">full width</a></li>
+						<li><a href="sidebar_left.html" target="_blank">sidebar left</a></li>
+						<li><a href="sidebar_right.html" target="_blank">sidebar right</a></li>
+						<li><a href="#">basic grid</a></li>
+					</ul>	
+				</li>
+				<!-- DROPDOWN -->
+				<li class="nav__ul__item">
+					<span class="nav__ul__item_before_2">
+						<a href="#">dropdown</a>
+					</span>
+					<!-- DROPDOWN ul li -->
+				    <ul class="nav__ul__item__3">
+				    	<li>
+				    		<a href="#">level 2</a>
+				    	</li>
+				    	<li class="nav__ul__item__3_level_2">
+				    		<span class="nav__ul__item_before_2_item">
+				    		<a href="#">level 2 + drop</a>
+				    		</span>
+				    		<!-- DROPDOWN ul li ul -->
+				    			<ul class="nav__ul__item__3__item">
+					    	   	   <li><a href="#">level 3</a></li>
+								   <li><a href="#">level 3</a></li>
+								   <li><a href="#">level 3</a></li>
+								</ul>	
+				    	</li>	
+				  		<li><a href="#">level 2</a></li>
+					</ul>
+				 </li>
+				<li><a href="#">link text</a></li>
+				<li><a href="#">link text</a></li>
+			</ul>
+			 </div>
+			 </div>
+	     </nav>
+		<section>
+		   <h1>ultricies nisl</h1>
+		   <p>Morbi lacus sapien venenatis id cursus in bibendum eget ligula nunc vitae lacus sit amet sem consequat ullamcorper.</p>
+		   <button>vulputate</button>
+		 </section>
+	</header>
+	      <!-- MAIN MENU -->
+	<div class="container container_1">
+		<h1>velit id imperdiet</h1> <!--  class="container_item_h1" -->
+		<p>Augue sapien et sapien nunc urna duis eget libero non.</p>
+	    	<div class="container_">
+	       	    <section class="column_1">
+	            	<a href="#">
+	            		<i class="fas fa-bell"></i>
+	    		   	 </a>
+					<a href="#"><h2>lobortis</h2></a>
+					<p>Blandit velit ut sem commodo justo quis erat donec nec est ut sodales</p>
+				 </section>
+				<section class="column_1">
+					<a href="#">
+						<i class="fas fa-music"></i>
+					 </a>
+					<a href="#"><h2>suscipit</h2></a>
+					<p>Sem scelerisque sem fusce sed ligula id sem suscipit mollis quisque</p>
+				 </section>
+				<section class="column_1">
+					<a href="#">
+						<i class="fas fa-running"></i>
+					 </a>
+					<a href="#"><h2>vivamus</h2></a>
+					<p>Est enim lacinia lobortis viverra interdum quam sed pharetra</p>
+				 </section>
+				<section class="column_1">
+					<a href="#">
+						<i class="fas fa-headphones-alt"></i>
+					 </a>
+					<a href="#"><h2>facilisis</h2></a>
+					<p>Faucibus dui praesent at velit morbi ullamcorper lacus at urna maecenas</p>
+				 </section>
+		    </div>
+	 </div>
+    <div class="container container_2">
+			<h1>eu neque lacinia</h1>
+			<p>Orci ullamcorper posuere nulla facilisi maecenas convallis.</p>
+		    	<div class="container_">
+			    	<section class="column_2">
+				  	 	<h3>a. doe</h3>
+				  		<p class="column_2_item">Chief Executive Officer</p>
+				  		<a href="#">
+					  		<div class="column_2__img">
+					  			<img src="https://images.unsplash.com/photo-1473830394358-91588751b241?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="">
+  					  			<i class="far fa-eye"></i>
+					  		</div>
+				  		</a>
+				  		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum in perspiciatis, nam quia natus dicta voluptatem amet!</p>
+				  		<div class="column_2__soc_network">
+				  			<a href="https://twitter.com/" target="_blank">
+				  				<i class="fab fa-twitter"></i>
+				  			</a>
+				  			<a href="https://www.instagram.com/" target="_blank">
+			 					<i class="fab fa-linkedin-in"></i>
+				  			</a>
+				  			<a href="https://www.google.com/" target="_blank">
+				  				<i class="fab fa-google-plus-g"></i>
+				  			</a>
+				  			<a href="https://vk.com/" target="_blank">
+				  				<i class="fab fa-vk"></i>
+				  			</a>	
+				  		 </div>
+			  		 </section>
+	   		  		<section class="column_2">
+	  		  			<h3>b. doe</h3>
+	  		  			<p class="column_2_item">General Manager</p>
+	  		  			<a href="#">
+			  				<div class="column_2__img">
+			  					<img src="https://images.unsplash.com/photo-1492681290082-e932832941e6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80" alt="">
+			  					<i class="far fa-eye"></i>
+			  				</div>
+			  	    	</a>
+	  		   			<p>At rutrum diam sem sed turpis mauris pede arcu molestie ut scelerisque id tincidunt tincidunt neque proin iaculis mauris eu.</p>
+	  		  			<div class="column_2__soc_network">
+				  			<a href="https://twitter.com/" target="_blank">
+				  				<i class="fab fa-twitter"></i>
+				  			</a>
+				  			<a href="https://www.instagram.com/" target="_blank">
+			 					<i class="fab fa-linkedin-in"></i>
+				  			</a>
+				  			<a href="https://www.google.com/" target="_blank">
+				  				<i class="fab fa-google-plus-g"></i>
+				  			</a>
+				  			<a href="https://vk.com/" target="_blank">
+				  				<i class="fab fa-vk"></i>
+				  			</a>	
+				  		 </div>
+			  		 </section>
+	  		  		<section class="column_2">
+	  		  			<h3>c. doe</h3>
+	  		  			<p class="column_2_item">Marketing Manager</p>
+	  		  			<a href="#">
+			  				<div class="column_2__img">
+			  					<img src="https://images.unsplash.com/photo-1494959764136-6be9eb3c261e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80" alt="">
+   			  					<i class="far fa-eye"></i>
+			  				</div>
+			  	    	</a>
+	  		   			<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem exercitationem, debitis quam cumque. Magnam.</p>
+	  		  			<div class="column_2__soc_network">
+				  			<a href="https://twitter.com/" target="_blank">
+				  				<i class="fab fa-twitter"></i>
+				  			</a>
+				  			<a href="https://www.instagram.com/" target="_blank">
+			 					<i class="fab fa-linkedin-in"></i>
+				  			</a>
+				  			<a href="https://www.google.com/" target="_blank">
+				  				<i class="fab fa-google-plus-g"></i>
+				  			</a>
+				  			<a href="https://vk.com/" target="_blank">
+				  				<i class="fab fa-vk"></i>
+				  			</a>	
+				  		 </div>
+	  		 		 </section>
+			     </div>
+		  </div>
+	<div class="container container_3">
+		<h1 class="container_item_h1">varius tristique</h1>
+		<p>Luctus et ultrices posuere cubilia curae maecenas.</p>
+		<div class="container_">
+	   	 	<section class="column_3">
+	   	    	<a href="#">
+	 		   		<i class="fas fa-cogs"></i>
+	   	    	 </a>
+	   	       	<h2>faucibus</h2>
+	   	    	<h4 class="column_3__item_text">12345</h4>
+	   	    </section>
+	   	    <section class="column_3">
+	   	    	<a href="#">
+ 		   			<i class="fas fa-comments"></i>
+	   	    	 </a>
+	   	       	<h2>pellentesque</h2>
+	   	    	<h4 class="column_3__item_text">12345</h4>
+	   	    </section>
+	   	    <section class="column_3">
+	   	    	<a href="#">
+	 		   		<i class="fas fa-tools"></i>
+	   	    	 </a>
+		    	<h2>hendrerit</h2>
+	   	    	<h4 class="column_3__item_text">12345</h4>
+	   	    </section>
+	   	    <section class="column_3">
+	   	    	<a href="#">
+	 		   		<i class="fas fa-sliders-h"></i>
+	   	    	 </a>
+    	    	<h2>venenatis</h2>
+	   	    	<h4 class="column_3__item_text">12345</h4>
+	   	    </section>
+	   	</div>          	    	
+	 </div>
+	<div class="container container_4">
+		<h1>eu neque lacinia</h1>
+		<p>Orci ullamcorper posuere nulla facilisi maecenas convallis.</p>
+		<div class="container_">
+			<section class="column_4">
+				<img src="images/04.jpg" alt="">
+			    <div class="column_4_img">
+			    	<div class="calendar">
+			    		<span class="cal_day">06</span>
+			    		<span class="cal_month">apr</span>
+			    	</div>
+			    </div>
+				<h1>justo proin volutpat</h1>
+				<p>by <span class="column_4__link"><a href="#">Admin</a></span> / in <span class="column_4__link"><a href="#">Category Name</a></span></p>
+				<p>Quisque sodales vestibulum fringilla risus in metus curabitur accumsan sem malesuada lorem accumsan viverra lorem ipsum dolor […]</p>
+				<a href="#" class="column_4__button_a">read more &raquo;</a>
+			 </section>
+			<section class="column_4">
+				<img src="images/05.jpg" alt="">
+				<span class="column_5_img">
+				    <div class="calendar">
+			    		<span class="cal_day">05</span>
+			    		<span class="cal_month">apr</span>
+			    	</div>
+			    </span>	
+				<h1>ligula quis sapien</h1>
+				<p>by <span class="column_4__link"><a href="#">Admin</a></span> / in <span class="column_4__link"><a href="#">Category Name</a></span></p>
+				<p>Sit amet consectetuer adipiscing elit vivamus pharetra libero non imperdiet mi augue feugiat nisl sit amet vivamus mollis enim velit […]</p>
+				<a href="#" class="column_4__button_a">read more &raquo;</a>
+			 </section>
+			<section class="column_4">
+				<img src="images/06.jpg" alt="">
+				<span class="column_6_img">
+				   <div class="calendar">
+			    		<span class="cal_day">04</span>
+			    		<span class="cal_month">apr</span>
+			    	</div>
+			    </span>	
+				<h1>vestibulum luctus nisi</h1>
+				<p>by <span class="column_4__link"><a href="#">Admin</a></span> / in <span class="column_4__link"><a href="#">Category Name</a></span></p>
+				<p>Posuere metus etiam eleifend nisl nec lectus sed porttitor accumsan arcu nullam ac velit fusce scelerisque ligula sit amet urna […]</p>
+				<a href="#" class="column_4__button_a">read more &raquo;</a>
+			 </section>
+		</div>
+	 </div>
+
+
+	                   <!-- FOOTER -->
+	            <!-- FOOTER -->
+	<div class="container container_footer">
+		    <div class="container_">
+	        	<section class="column_5">
+		        	<h1>basend</h1>
+		        	<p>Nullam quis ligula elementum lectus varius aliquet vivamus odio donec metus libero semper quis suscipit ut aliquam a metus integer.</p>
+		        	<p>Pretium curabitur magna odio laoreet eu accumsan vitae gravida quis odio.</p>
+		        	<a href="#"><img src="images/icons/home.png" alt="" class="column_5__first_img"></a>
+		        	<a href="#" class="link_nav_footer">about</a>
+		        	<a href="#" class="link_nav_footer">contact</a>
+		        	<a href="#" class="link_nav_footer">terms</a>
+		        	<a href="#" class="link_nav_footer">privacy</a>
+		        	<a href="#" class="link_nav_footer">cookies</a>
+		        	<a href="#" class="link_nav_footer">online shop</a>
+		        	<a href="#" class="link_nav_footer">sitemap</a>
+	             </section>
+	            <section class="column_5">
+		        	<h1 class="column_5_item_h1 ">aliquam non gfermentum</h1>
+		        	<img src="images/icons/location.png" alt="" class="column_5__img_center">
+		        	<p class="column_5__footer_text_center">Street Name & Number, Town, Postcode/Zip</p>
+	        		<img src="images/icons/mobile.png" alt="" class="column_5__img_center">
+	        	    <p class="column_5__footer_text_center"> +00 (123)  456 7890</p>
+	        	    <img src="images/icons/phone.png" alt="" class="column_5__img_center">
+	        	    <p class="column_5__footer_text_center">+00 (123)  456 7890</p>
+	                <img src="images/icons/messagee.png" alt="" class="column_5__img_center">
+	    	        <p class="column_5__footer_text_center">info@domain.com</p>
+
+		     			<div class="soc_network_footer">
+		     				<a href="https://www.facebook.com/" target="_blank">
+			    	      		<i class="fab fa-facebook-f"></i>
+			    	      	</a>
+				     		<a href="https://twitter.com/" target="_blank">
+	  		  					<i class="fab fa-twitter"></i>
+	  		  				 </a>
+			    	      	<a href="https://www.skype.com/ru/" target="_blank">
+			    	      		<i class="fab fa-skype"></i>
+			    	      	 </a>
+			    	      	<a href="https://www.instagram.com/" target="_blank">
+			  					<i class="fab fa-linkedin-in"></i>
+			  				</a>
+			    	      	<a href="https://www.google.com/" target="_blank">
+			  					<i class="fab fa-google-plus-g"></i>
+			  				</a>
+			    	      	<a href="https://vk.com/" target="_blank">
+			  					<i class="fab fa-vk"></i>
+			  				</a>
+		    	      	 </div>
+	             </section>
+	            <section class="column_5">
+		        	<h1 class="column_5_item_h1">sapien lobortis nec</h1>
+		           		<img src="images/07.jpg" alt="" class="column_5__right_img">
+		               	<a href="#" ><h1 class="column_5__last_h1_link">velit pellentesque</h1></a>
+		        	<p class="column_5__small_text">Thursday, 5<sup>th</sup> April 2045</p>
+		        	<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos, accusantium. Sequi sint earum quis labore adipisci […]</p>
+	             </section>
+	         </div>
+	 </div>
+	<div class="footer_border">
+	    <div class="container_footer_border">
+	    	<p>Copyright &copy; 2021 - All Rights Reserved - Domain Name</p>
+	  	 	<p>Template by OS Templates</p>
+	     </div>
+	 </div> 
+	 <script src="js/main.js"></script>
+</body>
+</html>

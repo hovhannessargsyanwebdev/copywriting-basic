@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="js/jquery-1.11.0.min"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width scale=1">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/full_width,gallery,sidebar_left,sidebar_right.css">
+    <link rel="stylesheet" type="text/css" href="css/media_style.css"> 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">   
+    <title>Gallery</title>
+    <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+
+</head>
+<body>
+    <div id="to_top" class="to_top">
+        <a href="javascript">
+            <i class="fas fa-angle-up"></i>
+         </a>
+     </div>
+    <header class="header_gallery">
+        <nav>
+            <div class="container_navigation">  
+            <div class="nav__container_">
+            <a href="index.html" class="nav__link_h1"><h1>basend</h1></a>
+            <select name="menu" class="select" onchange="top.location=this.value">
+                <option value="menu" selected="selected">MENU</option>
+                <option value="index.html">Home
+                    <!-- <a href="index.html" target="_blank">Home</a> -->
+                </option>
+                <option value="">Pages</option>
+                <option value="gallery.html">- - Gallery
+                    <!-- <a href="gallery.html">- - Gallery</a> -->
+                </option>
+                <option value="full-width.html">full-width
+                    <!-- <a href="full-width.html">- - Full Width</a> -->
+                </option>
+                <option value="sidebar_left.html">- - Sidebar left
+                    <!-- <a href="sidebar_left.html">- - Sidebar left</a> -->
+                </option>
+                <option value="sidebar_right.html">- - Sidebar Right
+                    <!-- <a href="sidebar_right.html">- - Sidebar Right</a> -->
+                </option>
+                <option value="basic grid">- - Basic Grid</option>
+                <option value="Dropdown">Dropdown</option>
+                <option value="">- - Level 2</option>
+                <option value="">- - Level 2 + drop</option>
+                <option value="">- - Level 3</option>
+                <option value="">- - Level 3</option>
+                <option value="">- - Level 3</option>
+                <option value="">- - Level 2</option>
+                <option value="">Link Text</option>
+                <option value="">Link Text</option>
+             </select>
+            <ul class="nav__ul">
+                <!-- HOME -->
+                <li class="nav__ul__item_first nav__ul__item">
+                    <a href="index.html">home</a>
+                </li>
+                <!-- PAGES -->
+                <li class="nav__ul__item">
+                    <span class="nav__ul__item_before_1">
+                        <a href="#">pages</a>
+                    </span>
+                <!-- PAGES UL LI -->
+                    <ul class="nav__ul__item__2">
+                        <li><a href="gallery.html" target="_blank">gallery</a></li>
+                        <li><a href="full-width.html" target="_blank">full width</a></li>
+                        <li><a href="sidebar_left.html" target="_blank">sidebar left</a></li>
+                        <li><a href="sidebar_right.html" target="_blank">sidebar right</a></li>
+                        <li><a href="#">basic grid</a></li>
+                    </ul>   
+                </li>
+                <!-- DROPDOWN -->
+                <li class="nav__ul__item">
+                    <span class="nav__ul__item_before_2">
+                        <a href="#">dropdown</a>
+                    </span>
+                    <!-- DROPDOWN ul li -->
+                    <ul class="nav__ul__item__3">
+                        <li>
+                            <a href="#">level 2</a>
+                        </li>
+                        <li class="nav__ul__item__3_level_2">
+                            <span class="nav__ul__item_before_2_item">
+                            <a href="#">level 2 + drop</a>
+                            </span>
+                            <!-- DROPDOWN ul li ul -->
+                                <ul class="nav__ul__item__3__item">
+                                   <li><a href="#">level 3</a></li>
+                                   <li><a href="#">level 3</a></li>
+                                   <li><a href="#">level 3</a></li>
+                                </ul>   
+                        </li>   
+                        <li><a href="#">level 2</a></li>
+                    </ul>
+                 </li><a href="#">link text</a></li>
+                <li><a href="#">link text</a></li>
+            </ul>
+             </div>
+             </div>
+         </nav>
+            <div class="container_gallery_page">
+                <div class="container_gallery_page_container_nav">
+                    <h2>gallery</h2>
+                    <ul class="gallery_page_header_link">
+                        <li class="gallery_page_header_link_item"><a href="index.html" class="a">home &raquo;</a></li>
+                        <li class="gallery_page_header_link_item"><a href="#" class="a">lorem &raquo;</a></li>
+                        <li class="gallery_page_header_link_item"><a href="#" class="a">ipsum &raquo;</a></li>
+                        <li class="gallery_page_header_link_item"><a href="#" class="a">dolor &raquo;</a></li>
+                     </ul>
+                 </div>
+             </div>      
+     </header>
+    <div class="container_gallery_page">
+        <div class="container_gallery_page_container_">
+            <h1>gallery title goes here</h1>        
+            <div class="container_gallery_page_container_img">
+                <img src="images/01.png" alt="">
+                <img src="images/01.png" alt="">
+                <img src="images/01.png" alt="">
+                <img src="images/01.png" alt="">
+             </div>        
+             <div class="container_gallery_page_container_img">
+                <img src="images/01.png" alt="">
+                <img src="images/01.png" alt="">
+                <img src="images/01.png" alt="">
+                <img src="images/01.png" alt="">
+             </div>   
+             <div class="container_gallery_page_container_img">
+                <img src="images/01.png" alt="">
+                <img src="images/01.png" alt="">
+                <img src="images/01.png" alt="">
+                <img src="images/01.png" alt="">
+             </div>   
+            <p>Gallery Description Goes Here</p>
+            <div class="navigatio_buttons">
+                <a href="#">&laquo; Previous</a>
+                <a href="#">1</a>
+                <a href="#">2</a>
+                <a href="#">...</a>
+                <a href="#">6</a>
+                <a href="#">7</a>
+                <a href="#">8</a>
+                <a href="#">9</a>
+                <a href="#">...</a>
+                <a href="#">14</a>             
+                <a href="#">15</a>             
+                <a href="#">Next &raquo;</a>             
+             </div>  
+         </div>
+     </div>
+    <div class="container container_footer">
+            <div class="container_">
+                <section class="column_5">
+                    <h1>basend</h1>
+                    <p>Nullam quis ligula elementum lectus varius aliquet vivamus odio donec metus libero semper quis suscipit ut aliquam a metus integer.</p>
+                    <p>Pretium curabitur magna odio laoreet eu accumsan vitae gravida quis odio.</p>
+                    <a href="#"><img src="images/icons/home.png" alt="" class="column_5__first_img"></a>
+                    <a href="#" class="link_nav_footer">about</a>
+                    <a href="#" class="link_nav_footer">contact</a>
+                    <a href="#" class="link_nav_footer">terms</a>
+                    <a href="#" class="link_nav_footer">privacy</a>
+                    <a href="#" class="link_nav_footer">cookies</a>
+                    <a href="#" class="link_nav_footer">online shop</a>
+                    <a href="#" class="link_nav_footer">sitemap</a>
+                 </section>
+                <section class="column_5">
+                    <h1 class="column_5_item_h1 ">aliquam non gfermentum</h1>
+                    <img src="images/icons/location.png" alt="" class="column_5__img_center">
+                    <p class="column_5__footer_text_center">Street Name & Number, Town, Postcode/Zip</p>
+                    <img src="images/icons/mobile.png" alt="" class="column_5__img_center">
+                    <p class="column_5__footer_text_center"> +00 (123)  456 7890</p>
+                    <img src="images/icons/phone.png" alt="" class="column_5__img_center">
+                    <p class="column_5__footer_text_center">+00 (123)  456 7890</p>
+                    <img src="images/icons/messagee.png" alt="" class="column_5__img_center">
+                    <p class="column_5__footer_text_center">info@domain.com</p>
+                        <div class="soc_network_footer">
+                            <a href="https://www.facebook.com/" target="_blank">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="https://twitter.com/" target="_blank">
+                                <i class="fab fa-twitter"></i>
+                             </a>
+                            <a href="https://www.skype.com/ru/" target="_blank">
+                                <i class="fab fa-skype"></i>
+                             </a>
+                            <a href="https://www.instagram.com/" target="_blank">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="https://www.google.com/" target="_blank">
+                                <i class="fab fa-google-plus-g"></i>
+                            </a>
+                            <a href="https://vk.com/" target="_blank">
+                                <i class="fab fa-vk"></i>
+                            </a>
+                         </div>
+                 </section>
+                <section class="column_5">
+                    <h1 class="column_5_item_h1">sapien lobortis nec</h1>
+                        <img src="images/07.jpg" alt="" class="column_5__right_img">
+                        <a href="#" ><h1 class="column_5__last_h1_link">velit pellentesque</h1></a>
+                    <p class="column_5__small_text">Thursday, 5<sup>th</sup> April 2045</p>
+                    <p>Eget nisl mauris placerat mauris a semper posuere sem arcu cursus felis non cursus enim odio in maecenas ut justo […]</p>
+                 </section>
+             </div>
+     </div>
+    <div class="footer_border">
+        <div class="container_footer_border">
+            <p>Copyright &copy; 2019 - All Rights Reserved - Domain Name</p>
+            <p>Template by OS Templates</p>
+         </div>
+     </div> 
+     <script src="js/main.js"></script>
+</body>
+</html>
